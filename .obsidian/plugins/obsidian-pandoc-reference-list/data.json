@@ -2,7 +2,7 @@
   "pathToPandoc": "/usr/local/bin/pandoc",
   "tooltipDelay": 400,
   "zoteroGroups": [],
-  "renderCitations": true,
+  "renderCitations": false,
   "renderCitationsReadingMode": true,
   "renderLinkCitations": true,
   "pullFromZotero": false,
