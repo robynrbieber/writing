@@ -11,14 +11,10 @@
             "id": "dda6d3735c9de92f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Index/README Writing Scratchpad.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README Writing Scratchpad"
+              "title": "New tab"
             }
           }
         ]
@@ -238,10 +234,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dda6d3735c9de92f",
+  "active": "0982e8d16b3e1320",
   "lastOpenFiles": [
-    "Index",
+    "Index/01-Inbox",
+    "Index/02-Resources/Templates",
+    "Index/03-Archives",
+    "Index/02-Resources",
+    "Index/Untitled.md",
+    "Index/Untitled 1.md",
+    "Index/02-Drafts",
     "Index/README Writing Scratchpad.md",
+    "Index",
     "Codex Scratch Pad.md",
     "Index/01-Productivity/Inbox/Professional website.md",
     "Index/01-Productivity/Projects/Folkmatter Setup/Marketing Scratch Pad.md",
@@ -269,8 +272,6 @@
     "Index/01-Productivity/Projects/01 Shiloh DATA/Shiloh Schema.canvas",
     "Index/01-Productivity/Projects/01 Shiloh DATA",
     "Index/03-Resources/Guides/Official Research Workflow.canvas",
-    "Index/01-Productivity/Inbox/Using Scispace.md",
-    "Index/01-Productivity/Inbox/reading-the-silences.md",
     "Index/03-Resources/Attachments/IMG_7963.jpeg",
     "Index/03-Resources/Attachments/IMG_7962.jpeg",
     "Index/03-Resources/Attachments/IMG_7961.jpeg",
@@ -283,11 +284,6 @@
     "Index/03-Resources/Attachments/IMG_7908.jpeg",
     "Index/01-Productivity/Projects/The Archivo",
     "Index/01-Productivity/Projects/0925-EVAS",
-    "Index/04-Archives/Attachments",
-    "Index/03-Resources/Attachments/Types of Literature Review.text",
-    "Index/03-Resources/Attachments/Literature_Review_Guide.pdf",
-    "Index/03-Resources/Attachments/reading-methods-overview.pdf",
-    "Index/03-Resources/Attachments/GUIDES-TEMPLATE-Academic Reading Template 252f3de29c0980519542f0731908980c.pdf",
-    "Index/03-Resources/Attachments/ADHD_Friendly_Lit_Review_Guidebook_(1).pdf"
+    "Index/04-Archives/Attachments"
   ]
 }
