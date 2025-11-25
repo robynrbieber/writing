@@ -3,7 +3,7 @@
   "tooltipDelay": 400,
   "zoteroGroups": [],
   "renderCitations": false,
-  "renderCitationsReadingMode": true,
+  "renderCitationsReadingMode": false,
   "renderLinkCitations": true,
   "pullFromZotero": false,
   "pathToBibliography": "/Users/robynbieber/Library/CloudStorage/GoogleDrive-robynrbieber@gmail.com/My Drive/Resources/Pandoc-Resources/My Library.bib",

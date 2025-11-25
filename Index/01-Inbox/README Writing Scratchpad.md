@@ -6,9 +6,7 @@
 
 Porttitor cillum ducimus necessitatibus optio habitasse, perspiciatis sequi, expedita faucibus, phasellus mollis quae nec eius, eiusmod, fermentum doloremque! Integer, officiis. [@baileyAfricanVoicesAtlantic2006]
 
-@baileyAfricanVoicesAtlantic2006
 
-@brownEmmettTillsMother2018
 
 [@bronnerFolklifeStudiesGilded1987]
 
@@ -16,5 +14,6 @@ Porttitor cillum ducimus necessitatibus optio habitasse, perspiciatis sequi, exp
 
 [@baileyAfricanVoicesAtlantic2006]
 
-[@Test]
+`[@smith2023, p. 45]`
+
 
