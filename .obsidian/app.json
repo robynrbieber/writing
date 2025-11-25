@@ -2,9 +2,9 @@
   "readableLineLength": false,
   "promptDelete": false,
   "propertiesInDocument": "visible",
-  "attachmentFolderPath": "Index/04-Archives/Attachments",
+  "attachmentFolderPath": "Index/03-Resources/Attachments",
   "newFileLocation": "folder",
-  "newFileFolderPath": "Index/01-Productivity/Inbox",
+  "newFileFolderPath": "Index/01-Inbox",
   "uriCallbacks": true,
   "mobileToolbarCommands": [
     "command-palette:open",
