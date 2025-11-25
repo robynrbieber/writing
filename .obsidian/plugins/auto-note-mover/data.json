@@ -1,0 +1,69 @@
+{
+  "trigger_auto_manual": "Automatic",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#evergreen",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#fleeting",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#permanent",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#glossary",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#event",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#source",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#source-literature",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#thematic-literature",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Zettelkasten",
+      "tag": "#meta-literature",
+      "pattern": ""
+    },
+    {
+      "folder": "Index/03-Resources/Guides",
+      "tag": "#guide",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": "Index/04-Archives/Attachments"
+    },
+    {
+      "folder": "Index/03-Resources/Templates"
+    },
+    {
+      "folder": "Index/03-Resources/Schema"
+    }
+  ]
+}

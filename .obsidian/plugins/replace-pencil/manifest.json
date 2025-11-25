@@ -1,0 +1,11 @@
+{
+	"id": "replace-pencil",
+	"name": "Replace Pencil",
+	"version": "1.0.5",
+	"minAppVersion": "0.15.0",
+	"description": "Easily replace the custom variable in the code block.",
+	"author": "penyt",
+	"authorUrl": "https://github.com/penyt",
+	"fundingUrl": "https://www.buymeacoffee.com/penyt",
+	"isDesktopOnly": false
+}

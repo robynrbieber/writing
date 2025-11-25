@@ -1,0 +1,12 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "category": "multitext",
+    "notion-id": "text",
+    "zettel-type": "multitext",
+    "discpline": "multitext",
+    "area": "multitext"
+  }
+}

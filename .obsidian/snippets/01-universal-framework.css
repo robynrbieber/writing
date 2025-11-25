@@ -1,0 +1,420 @@
+/**
+ * ========================================================================
+ * UNIVERSAL OBSIDIAN CSS FRAMEWORK 2025
+ * ========================================================================
+ * 
+ * Version: 2.0.0
+ * Release Date: September 2024
+ * Author: Universal Theme Project
+ * Compatibility: Obsidian 1.6+ (Bases-ready)
+ * License: MIT
+ * 
+ * Description: 
+ * A comprehensive CSS framework for Obsidian that provides modern design
+ * tokens, responsive components, and seamless light/dark theme support.
+ * Updated for 2024-2025 Obsidian features including Bases, enhanced
+ * properties system, and new CSS variable architecture.
+ * 
+ * Features:
+ * - Modern design system with consistent spacing and typography
+ * - Enhanced table and callout components
+ * - Bases feature compatibility (limited CSS support)
+ * - New property format support (cssclasses, tags, aliases)
+ * - Split color format HSL/RGB variables
+ * - RTL language support
+ * - Mobile-first responsive design
+ * - Comprehensive utility classes
+ * - Style Settings plugin integration
+ * 
+ * Installation:
+ * 1. Save as 'universal-theme-framework.css' in .obsidian/snippets/
+ * 2. Enable in Settings > Appearance > CSS snippets
+ * 3. Install Style Settings plugin for full customization
+ * 
+ * Updates & Documentation:
+ * https://github.com/your-username/universal-obsidian-framework
+ * 
+ * ========================================================================
+ */
+
+/* ========================================================================
+   STYLE SETTINGS CONFIGURATION
+   ======================================================================== */
+
+/* @settings
+name: Universal Obsidian Framework 2025
+id: universal-obsidian-framework-2025
+settings:
+  - heading: Typography & Fonts
+    level: 1
+  - id: font-body
+    title: Body Font Family
+    description: Main text font used throughout the interface
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+  - id: font-headings
+    title: Heading Font Family
+    description: Font for all headings (h1-h6)
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+  - id: font-ui
+    title: Interface Font Family
+    description: Font for buttons, menus, and UI elements
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+  - id: font-mono
+    title: Monospace Font Family
+    description: Font for code blocks and technical content
+    type: variable-text
+    default: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace
+  - id: base-font-size
+    title: Base Font Size
+    description: Root font size for the entire interface
+    type: variable-number
+    default: 16
+    format: px
+  - id: heading-weight
+    title: Heading Font Weight
+    description: Font weight for all headings
+    type: variable-number
+    default: 600
+    format: ""
+  
+  - heading: Colors & Theming
+    level: 1
+  - id: accent-color
+    title: Primary Accent Color
+    description: Main brand color used for links, highlights, and interactive elements
+    type: variable-themed-color
+    format: hsl-split
+    default-light: '#007AFF'
+    default-dark: '#0A84FF'
+  - id: success-color
+    title: Success Color
+    description: Color for positive states and success messages
+    type: variable-color
+    format: hsl-split
+    default: '#28A745'
+  - id: warning-color
+    title: Warning Color
+    description: Color for warning states and caution messages
+    type: variable-color
+    format: hsl-split
+    default: '#FFC107'
+  - id: error-color
+    title: Error Color
+    description: Color for error states and destructive actions
+    type: variable-color
+    format: hsl-split
+    default: '#DC3545'
+  - id: info-color
+    title: Info Color
+    description: Color for informational messages and neutral highlights
+    type: variable-color
+    format: hsl-split
+    default: '#17A2B8'
+  
+  - heading: Layout & Spacing
+    level: 1
+  - id: content-max-width
+    title: Maximum Content Width
+    description: Maximum width for main content areas
+    type: variable-number
+    default: 1200
+    format: px
+  - id: base-spacing
+    title: Base Spacing Unit
+    description: Fundamental spacing unit - all other spacing derives from this
+    type: variable-number
+    default: 16
+    format: px
+  - id: border-radius
+    title: Default Border Radius
+    description: Standard corner rounding for UI elements
+    type: variable-number
+    default: 6
+    format: px
+  
+  - heading: Motion & Animation
+    level: 1
+  - id: animation-speed
+    title: Animation Duration
+    description: Standard animation timing for transitions and effects
+    type: variable-select
+    default: 200ms
+    options:
+      - label: Fast (150ms)
+        value: 150ms
+      - label: Normal (200ms)
+        value: 200ms
+      - label: Slow (300ms)
+        value: 300ms
+      - label: Very Slow (500ms)
+        value: 500ms
+  - id: animation-easing
+    title: Animation Easing
+    description: Animation timing curve for smooth transitions
+    type: variable-select
+    default: cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    options:
+      - label: Standard
+        value: cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      - label: Ease
+        value: ease
+      - label: Ease In
+        value: ease-in
+      - label: Ease Out
+        value: ease-out
+      - label: Ease In Out
+        value: ease-in-out
+      - label: Spring
+        value: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+  
+  - heading: Component Customization
+    level: 1
+  - id: table-stripe-opacity
+    title: Table Row Stripe Opacity
+    description: Opacity for alternating table row backgrounds (0-100)
+    type: variable-number-slider
+    default: 5
+    min: 0
+    max: 100
+    step: 5
+    format: "%"
+  - id: callout-border-width
+    title: Callout Border Width
+    description: Thickness of the left border on callout blocks
+    type: variable-number
+    default: 4
+    format: px
+  - id: button-shadow-strength
+    title: Button Shadow Intensity
+    description: Intensity of button drop shadows (0-10)
+    type: variable-number-slider
+    default: 2
+    min: 0
+    max: 10
+    step: 1
+    format: ""
+*/
+
+/* ========================================================================
+   CSS VARIABLES & DESIGN TOKENS
+   ======================================================================== */
+
+:root {
+  /* === CORE SYSTEM === */
+  --framework-version: "2.0.0";
+  --base-font-size: var(--base-font-size, 16px);
+  --base-line-height: 1.6;
+  --base-spacing: var(--base-spacing, 1rem);
+  
+  /* === TYPOGRAPHY SCALE (1.25 Perfect Fourth) === */
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.9rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.563rem;
+  --font-size-3xl: 1.953rem;
+  --font-size-4xl: 2.441rem;
+  --font-size-5xl: 3.052rem;
+  
+  /* === SPACING SCALE (1.5 Ratio) === */
+  --space-3xs: calc(var(--base-spacing) * 0.25);   /* 4px */
+  --space-2xs: calc(var(--base-spacing) * 0.375);  /* 6px */
+  --space-xs: calc(var(--base-spacing) * 0.5);     /* 8px */
+  --space-sm: calc(var(--base-spacing) * 0.75);    /* 12px */
+  --space-md: var(--base-spacing);                 /* 16px */
+  --space-lg: calc(var(--base-spacing) * 1.5);     /* 24px */
+  --space-xl: calc(var(--base-spacing) * 2.25);    /* 36px */
+  --space-2xl: calc(var(--base-spacing) * 3.375);  /* 54px */
+  --space-3xl: calc(var(--base-spacing) * 5.063);  /* 81px */
+  
+  /* === CONTAINER WIDTHS === */
+  --width-sm: 36rem;
+  --width-md: 48rem;
+  --width-lg: 64rem;
+  --width-xl: var(--content-max-width, 80rem);
+  --width-fluid: min(90vw, var(--width-xl));
+  --width-reading: 65ch;
+  
+  /* === COLOR SYSTEM === */
+  /* Base Neutral Palette */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  --neutral-950: #0a0a0a;
+  
+  /* Split Color Format Support (Obsidian 1.6+) */
+  --accent-h: var(--accent-h, 214);
+  --accent-s: var(--accent-s, 100%);
+  --accent-l: var(--accent-l, 59%);
+  --accent-r: var(--accent-r, 0);
+  --accent-g: var(--accent-g, 122);
+  --accent-b: var(--accent-b, 255);
+  --accent-a: var(--accent-a, 1);
+  
+  /* Semantic Color Definitions */
+  --color-accent: var(--accent-color, hsl(var(--accent-h), var(--accent-s), var(--accent-l)));
+  --color-success: var(--success-color, hsl(142, 76%, 36%));
+  --color-warning: var(--warning-color, hsl(45, 93%, 47%));
+  --color-error: var(--error-color, hsl(354, 84%, 57%));
+  --color-info: var(--info-color, hsl(199, 89%, 48%));
+  
+  /* === FUNCTIONAL COLORS (Light Theme) === */
+  --background-primary: var(--neutral-50);
+  --background-secondary: var(--neutral-100);
+  --background-tertiary: var(--neutral-200);
+  --background-accent: var(--color-accent);
+  
+  --text-normal: var(--neutral-900);
+  --text-muted: var(--neutral-600);
+  --text-faint: var(--neutral-400);
+  --text-accent: var(--color-accent);
+  --text-on-accent: white;
+  
+  --border-color: var(--neutral-300);
+  --border-color-alt: var(--neutral-200);
+  --divider-color: var(--neutral-200);
+  
+  --interactive-normal: var(--neutral-200);
+  --interactive-hover: var(--neutral-300);
+  --interactive-active: var(--neutral-400);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+  
+  /* === TYPOGRAPHY === */
+  --font-family-body: var(--font-body, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
+  --font-family-headings: var(--font-headings, var(--font-family-body));
+  --font-family-ui: var(--font-ui, var(--font-family-body));
+  --font-family-mono: var(--font-mono, "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace);
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-headings: var(--heading-weight, 600);
+  
+  --line-height-tight: 1.2;
+  --line-height-base: 1.6;
+  --line-height-loose: 1.8;
+  
+  /* === MOTION SYSTEM === */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-base: var(--animation-speed, 200ms);
+  --duration-slow: 300ms;
+  --duration-slower: 500ms;
+  
+  --easing-standard: var(--animation-easing, cubic-bezier(0.25, 0.46, 0.45, 0.94));
+  --easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
+  --easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --easing-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* === LAYOUT & GEOMETRY === */
+  --radius-sm: 3px;
+  --radius-base: var(--border-radius, 6px);
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+  
+  /* === ELEVATION SYSTEM === */
+  --shadow-color: 0 0 0;
+  --shadow-sm: 0 1px 2px 0 rgb(var(--shadow-color) / 0.05);
+  --shadow-base: 0 1px 3px 0 rgb(var(--shadow-color) / 0.1), 0 1px 2px -1px rgb(var(--shadow-color) / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(var(--shadow-color) / 0.1), 0 2px 4px -2px rgb(var(--shadow-color) / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(var(--shadow-color) / 0.1), 0 4px 6px -4px rgb(var(--shadow-color) / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(var(--shadow-color) / 0.1), 0 8px 10px -6px rgb(var(--shadow-color) / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(var(--shadow-color) / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(var(--shadow-color) / 0.05);
+  
+  /* === Z-INDEX SCALE === */
+  --z-base: 0;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal: 40;
+  --z-popover: 50;
+  --z-tooltip: 60;
+  --z-toast: 70;
+  --z-max: 9999;
+  
+  /* === COMPONENT-SPECIFIC TOKENS === */
+  /* Tables */
+  --table-bg: var(--background-secondary);
+  --table-border: var(--border-color);
+  --table-header-bg: var(--interactive-accent);
+  --table-header-color: var(--text-on-accent);
+  --table-row-stripe-bg: color-mix(in srgb, var(--background-tertiary) calc(var(--table-stripe-opacity, 5) * 1%), var(--table-bg));
+  --table-row-hover-bg: var(--interactive-hover);
+  --table-padding-x: var(--space-md);
+  --table-padding-y: var(--space-sm);
+  
+  /* Callouts */
+  --callout-radius: var(--radius-base);
+  --callout-padding: var(--space-lg);
+  --callout-border-width: var(--callout-border-width, 4px);
+  --callout-shadow: var(--shadow-sm);
+  
+  /* Buttons */
+  --button-padding-x: var(--space-md);
+  --button-padding-y: var(--space-sm);
+  --button-radius: var(--radius-base);
+  --button-shadow: 0 1px 2px 0 rgb(var(--shadow-color) / calc(var(--button-shadow-strength, 2) * 0.05));
+  --button-shadow-hover: 0 2px 4px 0 rgb(var(--shadow-color) / calc(var(--button-shadow-strength, 2) * 0.1));
+  
+  /* Code */
+  --code-bg: var(--background-tertiary);
+  --code-border: var(--border-color-alt);
+  --code-radius: var(--radius-sm);
+  --code-padding-inline: 0.25em;
+  --code-padding-block: 0.125em;
+  
+  /* Mobile safe area support (Obsidian 1.6+) */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+}
+
+/* ========================================================================
+   DARK THEME OVERRIDES
+   ======================================================================== */
+
+.theme-dark {
+  /* Functional colors for dark theme */
+  --background-primary: var(--neutral-950);
+  --background-secondary: var(--neutral-900);
+  --background-tertiary: var(--neutral-800);
+  
+  --text-normal: var(--neutral-100);
+  --text-muted: var(--neutral-400);
+  --text-faint: var(--neutral-600);
+  
+  --border-color: var(--neutral-700);
+  --border-color-alt: var(--neutral-800);
+  --divider-color: var(--neutral-800);
+  
+  --interactive-normal: var(--neutral-800);
+  --interactive-hover: var(--neutral-700);
+  --interactive-active: var(--neutral-600);
+  
+  /* Enhanced shadows for dark theme */
+  --shadow-color: 0 0 0;
+  --shadow-sm: 0 1px 2px 0 rgb(var(--shadow-color) / 0.3);
+  --shadow-base: 0 1px 3px 0 rgb(var(--shadow-color) / 0.4), 0 1px 2px -1px rgb(var(--shadow-color) / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(var(--shadow-color) / 0.4), 0 2px 4px -2px rgb(var(--shadow-color) / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(var(--shadow-color) / 0.4), 0 4px 6px -4px rgb(var(--shadow-color) / 0.4);
+  --shadow-xl: 0 20px 25px -5px rgb(var(--shadow-color) / 0.4), 0 8px 10px -6px rgb(var(--shadow-color) / 0.4);
+  --shadow-2xl: 0 25px 50px -12px rgb(var(--shadow-color) / 0.5);
+}
