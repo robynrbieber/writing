@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index/01-Inbox/README Writing Scratchpad.md",
+                "file": "Index/01-Inbox/@adkinsdeath2007.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README Writing Scratchpad"
+              "title": "@adkinsdeath2007"
             }
           }
         ]
@@ -167,12 +167,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index/01-Inbox/README Writing Scratchpad.md",
+                "file": "Index/01-Inbox/@adkinsdeath2007.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README Writing Scratchpad"
+              "title": "Outgoing links from @adkinsdeath2007"
             }
           },
           {
@@ -211,18 +211,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dda6d3735c9de92f",
+  "active": "0982e8d16b3e1320",
   "lastOpenFiles": [
-    "Index/03-Resources/Citekeys.md",
     "Index/01-Inbox/README Writing Scratchpad.md",
+    "Index/01-Inbox/@adkinsdeath2007.md",
+    "Users/robynbieber/Obsidian-Vaults/Zettelkasten/Index/03-Resources/Notes",
+    "Users/robynbieber/Obsidian-Vaults/Zettelkasten/Index/03-Resources",
+    "Users/robynbieber/Obsidian-Vaults/Zettelkasten/Index",
+    "Users/robynbieber/Obsidian-Vaults/Zettelkasten",
+    "Users/robynbieber/Obsidian-Vaults",
+    "Users/robynbieber",
+    "Users",
+    "Index/03-Resources/Citekeys.md",
     "Index/Untitled 1.md",
     "Index/01-Inbox",
     "Index/03-Resources/Templates",
     "Index/04-Archives",
-    "Index/03-Resources",
     "Index/Untitled.md",
-    "Index/02-Drafts",
-    "Index",
     "Codex Scratch Pad.md",
     "Index/01-Productivity/Inbox/Professional website.md",
     "Index/01-Productivity/Projects/Folkmatter Setup/Marketing Scratch Pad.md",
@@ -237,7 +242,6 @@
     "Index/01-Productivity/Projects/Folkmatter Setup/Lean Plan scratchpad.md",
     "Index/01-Productivity/Projects/Folkmatter Setup/Workshop and client style scratchpad.md",
     "Index/01-Productivity/Projects/Folkmatter Setup/Conceptualizing.md",
-    "Index/01-Productivity/Projects/Folkmatter Setup",
     "Index/01-Productivity/Inbox/Bonsai Scratchpad and setup.md",
     "Index/01-Productivity/Inbox/Prompt templates scratch pad.md",
     "Index/01-Productivity/Projects/The Archivo/Troops on the Streets.md",
@@ -246,9 +250,7 @@
     "Index/01-Productivity/Inbox/MCPs and Cursor Scratchpad.md",
     "Index/01-Productivity/Projects/Shiloh Presenration/Presentation.md",
     "Index/01-Productivity/Projects/01 Shiloh DATA/Shiloh data plan.canvas",
-    "Index/01-Productivity/Inbox/Squarespace blog meta idea.md",
     "Index/01-Productivity/Projects/01 Shiloh DATA/Shiloh Schema.canvas",
-    "Index/01-Productivity/Projects/01 Shiloh DATA",
     "Index/03-Resources/Guides/Official Research Workflow.canvas",
     "Index/03-Resources/Attachments/IMG_7963.jpeg",
     "Index/03-Resources/Attachments/IMG_7962.jpeg",
@@ -259,8 +261,6 @@
     "Index/03-Resources/Attachments/IMG_7953.png",
     "Index/03-Resources/Attachments/IMG_7952.png",
     "Index/03-Resources/Attachments/IMG_7951.png",
-    "Index/03-Resources/Attachments/IMG_7908.jpeg",
-    "Index/01-Productivity/Projects/The Archivo",
-    "Index/01-Productivity/Projects/0925-EVAS"
+    "Index/03-Resources/Attachments/IMG_7908.jpeg"
   ]
 }
