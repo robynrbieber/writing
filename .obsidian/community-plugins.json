@@ -15,5 +15,6 @@
   "url-into-selection",
   "extended-markdown-syntax",
   "omnisearch",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-pandoc-reference-list"
 ]
