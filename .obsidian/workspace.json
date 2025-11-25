@@ -97,7 +97,6 @@
       {
         "id": "d8eeefa08f78fca1",
         "type": "tabs",
-        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "f4bf16819fb430d9",
@@ -168,16 +167,16 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index/03-Resources/Schema/CSS Modification Registry.md",
+                "file": "Index/01-Inbox/README Writing Scratchpad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from CSS Modification Registry"
+              "title": "Outgoing links from README Writing Scratchpad"
             }
           },
           {
-            "id": "cb4c331c88857c10",
+            "id": "7d8a16efe93d4ef0",
             "type": "leaf",
             "state": {
               "type": "ReferenceListView",
@@ -212,14 +211,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cb4c331c88857c10",
+  "active": "0982e8d16b3e1320",
   "lastOpenFiles": [
     "Index/01-Inbox/README Writing Scratchpad.md",
     "Index/Untitled 1.md",
     "Index/01-Inbox",
-    "Index/04-Resources/Templates",
+    "Index/03-Resources/Templates",
     "Index/03-Archives",
-    "Index/04-Resources",
+    "Index/03-Resources",
     "Index/Untitled.md",
     "Index/02-Drafts",
     "Index",

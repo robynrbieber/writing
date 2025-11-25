@@ -4,6 +4,7 @@
 - samples
 - citation pandoc plugin
 
-[@baileyAfricanVoicesAtlantic2006]
+Porttitor cillum ducimus necessitatibus optio habitasse, perspiciatis sequi, expedita faucibus, phasellus mollis quae nec eius, eiusmod, fermentum doloremque! Integer, officiis. [@baileyAfricanVoicesAtlantic2006]
 
 @baileyAfricanVoicesAtlantic2006
+
