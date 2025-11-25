@@ -11,14 +11,10 @@
             "id": "dda6d3735c9de92f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Index/01-Inbox/@adkinsdeath2007.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "@adkinsdeath2007"
+              "title": "New tab"
             }
           }
         ]
@@ -167,26 +163,15 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index/01-Inbox/@adkinsdeath2007.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from @adkinsdeath2007"
-            }
-          },
-          {
-            "id": "7d8a16efe93d4ef0",
-            "type": "leaf",
-            "state": {
-              "type": "ReferenceListView",
-              "state": {},
-              "icon": "quote-glyph",
-              "title": "References"
+              "title": "Outgoing links"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -211,10 +196,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0982e8d16b3e1320",
+  "active": "dda6d3735c9de92f",
   "lastOpenFiles": [
-    "Index/01-Inbox/README Writing Scratchpad.md",
     "Index/01-Inbox/@adkinsdeath2007.md",
+    "Index/01-Inbox/README Writing Scratchpad.md",
     "Users/robynbieber/Obsidian-Vaults/Zettelkasten/Index/03-Resources/Notes",
     "Users/robynbieber/Obsidian-Vaults/Zettelkasten/Index/03-Resources",
     "Users/robynbieber/Obsidian-Vaults/Zettelkasten/Index",
