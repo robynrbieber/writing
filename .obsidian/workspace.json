@@ -97,7 +97,7 @@
       {
         "id": "d8eeefa08f78fca1",
         "type": "tabs",
-        "dimension": 76.52582159624413,
+        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "f4bf16819fb430d9",
@@ -177,47 +177,21 @@
             }
           },
           {
-            "id": "05a08b31a57f2b13",
+            "id": "cb4c331c88857c10",
             "type": "leaf",
             "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-ghost",
-              "title": "all-properties"
+              "type": "ReferenceListView",
+              "state": {},
+              "icon": "quote-glyph",
+              "title": "References"
             }
           }
         ],
         "currentTab": 5
-      },
-      {
-        "id": "3a8f88397064fd34",
-        "type": "tabs",
-        "dimension": 23.474178403755865,
-        "children": [
-          {
-            "id": "e0dca192a85af3cc",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "footnotes",
-              "state": {
-                "file": "Index/03-Resources/Schema/EDITING - CSS Modification Registry.md"
-              },
-              "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "footnotes"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 423.5,
-    "collapsed": true
+    "width": 423.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,8 +212,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dda6d3735c9de92f",
+  "active": "cb4c331c88857c10",
   "lastOpenFiles": [
+    "Index/01-Inbox/README Writing Scratchpad.md",
     "Index/Untitled 1.md",
     "Index/01-Inbox",
     "Index/04-Resources/Templates",
@@ -247,7 +222,6 @@
     "Index/04-Resources",
     "Index/Untitled.md",
     "Index/02-Drafts",
-    "Index/01-Inbox/README Writing Scratchpad.md",
     "Index",
     "Codex Scratch Pad.md",
     "Index/01-Productivity/Inbox/Professional website.md",

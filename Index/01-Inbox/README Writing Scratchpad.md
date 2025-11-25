@@ -4,3 +4,6 @@
 - samples
 - citation pandoc plugin
 
+[@baileyAfricanVoicesAtlantic2006]
+
+@baileyAfricanVoicesAtlantic2006
