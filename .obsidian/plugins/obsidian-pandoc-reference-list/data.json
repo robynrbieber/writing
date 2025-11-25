@@ -4,5 +4,7 @@
   "zoteroGroups": [],
   "renderCitations": true,
   "renderCitationsReadingMode": true,
-  "renderLinkCitations": true
+  "renderLinkCitations": true,
+  "pullFromZotero": true,
+  "pathToBibliography": "/Users/robynbieber/Library/CloudStorage/GoogleDrive-robynrbieber@gmail.com/My Drive/Resources/Pandoc-Resources/My Library.bib"
 }
